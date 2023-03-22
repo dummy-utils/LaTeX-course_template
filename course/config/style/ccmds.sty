@@ -1,0 +1,69 @@
+% custom commands configuration file
+
+% custom commands
+\newcommand{\dd}[1]{\,\mathrm{d}#1} % for integrals
+
+
+% configuration
+\graphicspath{{../assets/imgs/}}
+\pgfplotsset{compat=1.18}
+
+\hypersetup{
+  colorlinks = true,
+  linkcolor = gray,
+  citecolor = gray,
+  urlcolor = cyan,
+}
+
+% document style
+
+% toc style
+\renewcommand{\cftchapfont}{\bfseries\qsand}
+\renewcommand{\cftsecfont}{\qsand}
+\renewcommand{\cftsubsecfont}{\qsand}
+\renewcommand{\cftsubsubsecfont}{\qsand}
+
+\renewcommand{\cftchappagefont}{\bfseries\qsand}
+\renewcommand{\cftsecpagefont}{\qsand}
+\renewcommand{\cftsubsecpagefont}{\qsand}
+\renewcommand{\cftsubsubsecpagefont}{\qsand}
+
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\Huge\qsand\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+
+
+\setcounter{tocdepth}{4} % to show subsubsections in the toc
+
+% chapter
+\ChTitleUpperCase
+\ChNameUpperCase
+\ChNameVar{\huge\qsand}
+\ChTitleVar{\centering\Huge\qsand\bfseries}
+\ChNumVar{\fontsize{60}{60}\qsand}
+\ChRuleWidth{1.5pt}
+
+% header and footer
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\MakeUppercase{\markright{\thesection\ #1}}}
+\renewcommand{\headrulewidth}{.7pt}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[RO, LE]{\qsand\thepage}
+\fancyhead[LO]{\qsand\rightmark}
+\fancyhead[RE]{\qsand\leftmark}
+
+% section
+\titleformat{\section}
+{\qsand\Large\bfseries}{\thesection}{10pt}{}
+
+%subsection
+\titleformat{\subsection}
+{\qsand\large\bfseries}{\thesubsection}{10pt}{}
+
+%subsubsection
+\titleformat{\subsubsection}
+{\qsand\bfseries}{\thesubsubsection}{10pt}{}
+
+
+

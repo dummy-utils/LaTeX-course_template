@@ -1,0 +1,28 @@
+% custom fonts definitions
+
+% configuration for system fonts
+%\newfontfamily\umono{Ubuntu Mono}
+%\newfontfamily\qsand{Quicksand}
+%\renewfontfamily\ttfamily{\umono}
+
+% configuration for local fonts
+\newfontfamily\umono{regular.ttf}[
+  Path =           ../fonts/ubuntu-mono/,     % path relative to the folder of the main.tex file
+  BoldFont =       bold.ttf,
+  ItalicFont =     italic.ttf,
+  BoldItalicFont = bold-italic.ttf
+]
+
+\newfontfamily\qsand{regular.ttf}[
+  Path =           ../fonts/quicksand/,
+  BoldFont =       bold.ttf,
+]
+
+\newfontfamily\ccourier{regular.ttf}[
+  Path =           ../fonts/courier-prime/,     
+  BoldFont =       bold.ttf,
+  ItalicFont =     italic.ttf,
+  BoldItalicFont = bold-italic.ttf
+]
+
+\renewfontfamily\ttfamily{regular.ttf}[Path = ../fonts/ubuntu-mono/]
